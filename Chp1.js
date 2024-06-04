@@ -1,6 +1,6 @@
 //History
 /*Original name  - (first name) - Mocha
-				   (second name) - livescript
+(second name) - livescript
 Developed by the programmer Brandon eich in just 10 Days
 Final name  Mocha - Livescript - Javascript
 In 1997 Microsoft copied javascript features and made its own language
