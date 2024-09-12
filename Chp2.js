@@ -42,12 +42,13 @@ manna`); // it will give output Himadri \n Manna
 let str = 'Himadri';
 console.log(str.charAt(0)); // It will give the character from the string work as array because it start indesxing from 0
 console.log(str.slice(2, 7)); // it will slice the text from start number to end number
-console.log(str.slice(-6)); // if negative no is pass in slice it will start cpounting from backward and return the string
+console.log(str.slice(-6)); // if negative no is pass in slice it will start counting from backward and return the string
 console.log(str.substring(2, 7)); // substring is similiar to slice but it will take negative number as 0
 console.log(str.substring(-6)); // it will take -6 as 0 and give Himadri as output
 console.log(str.substr(2, 5)); // It will take start number from wher to start substring and length of substring
 console.log(str.toLowerCase()); //convert string to lowercase
 console.log(str.toUpperCase()); //convert string to UPPERCASE
+console.log(str.charCodeAt(2));
 
 let str1 = '        Himadri    ';
 console.log(str1.trim()); //It will trim the empty spaces
