@@ -25,3 +25,8 @@ console.log(num2 > num3);
 console.log(num2 < num3);
 console.log(num2 >= num3);
 console.log(num2 <= num3);
+console.log(undefined > num2);
+console.log(undefined == 0);
+console.log(null > 0);
+console.log(null == 0);
+console.log(null >= 0);

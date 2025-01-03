@@ -100,3 +100,32 @@ console.log(+null);
 
 let num = 12345678901234567890n;
 console.log(typeof num);
+
+/**
+ * 7. Symbol
+ * Symbol is a primitive Datatype which is used to give uniquness to its value if we want to create some unique data we will use
+ * Symbol Datatype
+ * NOTE: If we declare same data using Symbol Datatype it will give false on equating
+ */
+
+const id = Symbol('123');
+const anotherid = Symbol('123');
+
+console.log(id == anotherid);
+
+/**
+ * There are 3 Non Primitive Data types
+ * They are all call by reference Data type
+ * 1. ARRAY
+ */
+const heros = ['Ironman', 'Captain America', 'Thor']; //Array
+const obj1 = {
+  Name: 'Himadri Manna',
+  Age: '22',
+}; //Object
+
+const func1 = function () {
+  console.log('Hello World');
+}; //Function
+
+console.log(typeof obj1);
