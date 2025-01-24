@@ -40,7 +40,7 @@ manna`); // it will give output Himadri \n Manna
 
 //Differnet methods in Strings
 let str = 'Himadri';
-console.log(str.charAt(0)); // It will give the character from the string work as array because it start indesxing from 0
+console.log(str.charAt(0)); // It will give the character from the string work as array because it start indexing from 0
 console.log(str.slice(2, 7)); // it will slice the text from start number to end number
 console.log(str.slice(-6)); // if negative no is pass in slice it will start counting from backward and return the string
 console.log(str.substring(2, 7)); // substring is similiar to slice but it will take negative number as 0
@@ -118,7 +118,45 @@ console.log(id == anotherid);
  * They are all call by reference Data type
  * 1. ARRAY
  */
-const heros = ['Ironman', 'Captain America', 'Thor']; //Array
+//Array
+const arr = new Array(2, 4, 6, 8);
+console.log(arr);
+console.log(arr.includes(9));
+
+const newarr = arr.join();
+console.log(arr);
+console.log(newarr);
+console.log(typeof newarr);
+/**
+ * Slice It is a method in which it return the portion of array from start range(inclusive) to last range (exclusive)
+ * in a new array without manipulating the original array
+ *
+ * Splice It ia a method in which it return the portion of array from start range to last range(inclusive) by manipulating the
+ * original array by deleting the portion
+ */
+const myn1 = arr.slice(0, 3);
+console.log(myn1); // [4,6]
+console.log(arr); //[2,4,6,8]
+const myn2 = arr.splice(0, 3);
+console.log(myn2); //[4,6,8]
+console.log(arr); //[2]
+
+/**New concept */
+const marvel_heros = ['Ironman', 'Captain America', 'Thor'];
+const dc_heroes = ['Superman', 'Batman', 'Aquaman'];
+marvel_heros.push(dc_heroes); //It will combine both array and manipulate the original array. It will give array of 4 elements with dc_heroes whole array as an element
+console.log(marvel_heros);
+
+const all_heros = marvel_heros.concat(dc_heroes); // This method forms a new array by combining two or more arrays without manipulating the original array
+console.log(all_heros);
+
+//Spread Opretor
+const allnewheros = [...marvel_heros, ...dc_heroes]; //This operator is used in industry practise and we can combine n number of arrays
+console.log(allnewheros);
+
+console.log(Array.from('Himadri'));
+console.log(Array.from({ name: 'Himadri' }));
+//OBJECTS
 const obj1 = {
   Name: 'Himadri Manna',
   Age: '22',
@@ -128,4 +166,4 @@ const func1 = function () {
   console.log('Hello World');
 }; //Function
 
-console.log(typeof obj1);
+//console.log(typeof obj1);

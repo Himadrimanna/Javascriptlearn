@@ -90,7 +90,10 @@ Math.random() returns a random number between 0 (inclusive), and 1 (exclusive):
 Math.min() and Math.max()
 Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:
  */
+const min = 10;
+const max = 20;
+
 console.log(Math.random());
 console.log(Math.min(0, 150, 30, 20, -8, -200));
 console.log(Math.max(0, 150, 30, 20, -8, -200));
-Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(Math.floor(Math.random() * (max - min + 1)) + min);
